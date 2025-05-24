@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hrayfi LINK Color Palette</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #f8f9fa;
+            padding: 2rem;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .logo-preview {
+            background: white;
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .logo-text {
+            font-size: 3rem;
+            font-weight: bold;
+            display: inline-block;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 1.5rem;
+            color: #2c3e50;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .color-circle {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 1rem;
+            border: 2px solid rgba(0,0,0,0.1);
+            flex-shrink: 0;
+        }
+
+        .color-info {
+            flex-grow: 1;
+        }
+
+        .color-name {
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+
+        .color-hex {
+            font-family: 'Monaco', 'Menlo', monospace;
+            font-size: 0.9rem;
+            color: #666;
+        }
+
+        .usage-note {
+            font-size: 0.85rem;
+            color: #888;
+            margin-top: 0.25rem;
+        }
+
+        .comparison {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .comparison-section {
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #e9ecef;
+        }
+
+        .comparison-title {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .old-palette { background: #fff3e0; }
+        .new-palette { background: #e3f2fd; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Hrayfi LINK - Updated Color Palette</h1>
+            <div class="logo-preview">
+                <span class="logo-text" style="color: #1e5bb8;">h</span><span class="logo-text" style="color: #ff9500;">rayfi</span>
+                <span style="color: #4ba3d9; font-size: 1.5rem; margin-left: 0.5rem;">LINK</span>
+            </div>
+        </div>
+
+        <!-- Primary Brand Colors -->
+        <div class="section">
+            <h2 class="section-title">🎨 Primary Brand Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #1e5bb8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Blue</div>
+                        <div class="color-hex">#1E5BB8</div>
+                        <div class="usage-note">Main brand color, buttons, links</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ff9500;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Primary Orange</div>
+                        <div class="color-hex">#FF9500</div>
+                        <div class="usage-note">Accent color, highlights, CTAs</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #4ba3d9;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Secondary Blue</div>
+                        <div class="color-hex">#4BA3D9</div>
+                        <div class="usage-note">Secondary actions, info states</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Platform Colors -->
+        <div class="section">
+            <h2 class="section-title">🖥️ Platform Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #0f2a5c;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Blue</div>
+                        <div class="color-hex">#0F2A5C</div>
+                        <div class="usage-note">Headers, navigation</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #1e5bb8;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Bright Blue</div>
+                        <div class="color-hex">#1E5BB8</div>
+                        <div class="usage-note">Primary actions</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #4ba3d9;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Blue</div>
+                        <div class="color-hex">#4BA3D9</div>
+                        <div class="usage-note">Secondary elements</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #20c997;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Mint Green</div>
+                        <div class="color-hex">#20C997</div>
+                        <div class="usage-note">Success indicators</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ff9500;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Orange</div>
+                        <div class="color-hex">#FF9500</div>
+                        <div class="usage-note">Accent, warnings</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ffc107;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Yellow</div>
+                        <div class="color-hex">#FFC107</div>
+                        <div class="usage-note">Alerts, attention</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alert Colors -->
+        <div class="section">
+            <h2 class="section-title">🚨 Alert Colors</h2>
+            <div class="color-grid">
+                <!-- Success -->
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #10b981;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Success Border</div>
+                        <div class="color-hex">#10B981</div>
+                        <div class="usage-note">Success alert borders</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ecfdf5;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Success Background</div>
+                        <div class="color-hex">#ECFDF5</div>
+                        <div class="usage-note">Success alert backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #047857;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Success Text</div>
+                        <div class="color-hex">#047857</div>
+                        <div class="usage-note">Success alert text</div>
+                    </div>
+                </div>
+
+                <!-- Danger -->
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ef4444;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Danger Border</div>
+                        <div class="color-hex">#EF4444</div>
+                        <div class="usage-note">Error alert borders</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #fef2f2;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Danger Background</div>
+                        <div class="color-hex">#FEF2F2</div>
+                        <div class="usage-note">Error alert backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #dc2626;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Danger Text</div>
+                        <div class="color-hex">#DC2626</div>
+                        <div class="usage-note">Error alert text</div>
+                    </div>
+                </div>
+
+                <!-- Warning -->
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ff9500;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warning Border</div>
+                        <div class="color-hex">#FF9500</div>
+                        <div class="usage-note">Warning alert borders</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #fffbeb;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warning Background</div>
+                        <div class="color-hex">#FFFBEB</div>
+                        <div class="usage-note">Warning alert backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #d97706;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Warning Text</div>
+                        <div class="color-hex">#D97706</div>
+                        <div class="usage-note">Warning alert text</div>
+                    </div>
+                </div>
+
+                <!-- Info -->
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #4ba3d9;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Info Border</div>
+                        <div class="color-hex">#4BA3D9</div>
+                        <div class="usage-note">Info alert borders</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #eff6ff;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Info Background</div>
+                        <div class="color-hex">#EFF6FF</div>
+                        <div class="usage-note">Info alert backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #1e40af;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Info Text</div>
+                        <div class="color-hex">#1E40AF</div>
+                        <div class="usage-note">Info alert text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neutral Colors -->
+        <div class="section">
+            <h2 class="section-title">⚪ Neutral Colors</h2>
+            <div class="color-grid">
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #ffffff;"></div>
+                    <div class="color-info">
+                        <div class="color-name">White</div>
+                        <div class="color-hex">#FFFFFF</div>
+                        <div class="usage-note">Backgrounds, cards</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #f8f9fa;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Light Gray</div>
+                        <div class="color-hex">#F8F9FA</div>
+                        <div class="usage-note">Page backgrounds</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #e9ecef;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Medium Light Gray</div>
+                        <div class="color-hex">#E9ECEF</div>
+                        <div class="usage-note">Borders, dividers</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #6c757d;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Medium Gray</div>
+                        <div class="color-hex">#6C757D</div>
+                        <div class="usage-note">Secondary text</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #495057;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Dark Gray</div>
+                        <div class="color-hex">#495057</div>
+                        <div class="usage-note">Body text</div>
+                    </div>
+                </div>
+                <div class="color-item">
+                    <div class="color-circle" style="background-color: #212529;"></div>
+                    <div class="color-info">
+                        <div class="color-name">Black</div>
+                        <div class="color-hex">#212529</div>
+                        <div class="usage-note">Headings, strong text</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
